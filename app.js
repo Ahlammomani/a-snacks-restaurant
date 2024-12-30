@@ -1,12 +1,8 @@
+
 let username = prompt("enter your name")
-let gen = prompt("enter your gender")
-if( gen === "male"){ 
-alert(`welcome mr ${username}`)
-} else if(gen === "female") {
-    alert (`welcome ms ${username}`)
-}else {
-    alert(`welcome to the restaurant ${username}`)
-}
+proper_place();
+
+
 let order = prompt("what would you like to order a shawarma, zinger, or burger")
 let name = prompt(" write the name of the order.")
 alert(order+"your order is being prepared")
@@ -50,4 +46,25 @@ switch (yournumber){
 }
 
 alert(" Number variable: " + num);
+
+//EX
+//1
+let array=[]
+array.push(username)
+array.push(gen)
+array.push(order)
+//2
+for (let i=0; i<= array.length; i++ ){
+    console.log(array[i])
+}
+function proper_place (){
+    let gen = prompt("enter your gender")
+    if( gen === "male"){ 
+        alert(`welcome mr ${username}`)
+        } else if(gen === "female") {
+            alert (`welcome ms ${username}`)
+        }else {
+            alert(`welcome to the restaurant ${username}`)
+        } 
+}
 

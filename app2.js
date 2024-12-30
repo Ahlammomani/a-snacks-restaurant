@@ -47,3 +47,6 @@ for (let i = 0; i <= number2; i++) {
   sum += i;
 }
 alert(`The sum of integers from 0 to ${number2} is: ${sum}`);
+
+
+
