@@ -1,8 +1,6 @@
 
 let username = prompt("enter your name")
 proper_place();
-
-
 let order = prompt("what would you like to order a shawarma, zinger, or burger")
 let name = prompt(" write the name of the order.")
 alert(order+"your order is being prepared")

@@ -1,52 +1,98 @@
-// Q1
-let username = prompt("enter your name")
+// //Q1
 
-let gen;
+const info = [];
+const items = [];
+
+let userName = prompt("Enter your Name please :");
+const parentElement = document.getElementById('parentDiv');
+const newParagraph = document.createElement('p');
+newParagraph.textContent = userName;
+parentElement.appendChild(newParagraph);
+
+info.push(userName);
+let Gender;
+
 while (true) {
-    gen = prompt("enter your gender");
-    if (gen == "male" || gen == "female") {
-        break;
+  Gender = prompt("Enter Your Gender please:");
+  if (Gender === "male" || Gender === "female") {
+    break;
+  } else {
+    alert("Invalid input. Please enter 'male' or 'female'.");
+  }
+}
+if (Gender === "male") {
+  items.push(Gender);
+  info.push(Gender);
 
-    } else {
-
-        alert("input error")
-    }
+} else if (Gender === "female") {
+  info.push(Gender);
+  items.push(Gender);
 
 }
 
-if (gen === "male") {
-    alert(`welcome mr ${username}`)
-} else if (gen === "female") {
-    alert(`welcome ms ${username}`)
-} 
+let orderChoice = prompt("Would you like to order shawarma, zinger, or burger");
 
-// Q2
-for (let i = 0; i <= 5; i++) {
-    alert(i);
+items.push(orderChoice);
+info.push(orderChoice);
+
+
+
+  const orderedList = document.createElement('ol');
+
+
+  for (let i = 0; i < items.length; i++) {
+      const listItem = document.createElement('li'); // Create <li>
+      listItem.textContent = items[i]; // Set the text of the list item
+      orderedList.appendChild(listItem); // Add the <li> to the <ol>
+  }
+
+  document.getElementById('list-container').appendChild(orderedList);
+
+for (let i = 0; i < info.length; i++) {
+
+  console.log(info[i]);
+
 }
 
-// Q4
-let number;
-while (true) {
-    number = prompt("Please enter a number between 0 and 100:");
-
-    if (number >= 0 && number <= 100) {
-        break;
-    } else {
-        alert("input error. Please enter a number between 0 and 100.");
-    }
-}
-alert( `Thank you! You entered a valid number: ${number}`);
 
 
-// Q5
-let sum = 0;
-let number2 = prompt("Please enter an integer:");
 
-for (let i = 0; i <= number2; i++) {
-  sum += i;
-}
-alert(`The sum of integers from 0 to ${number2} is: ${sum}`);
+
+
+
+
+
+
+
+// // Q2
+// for (let i = 0; i <= 5; i++) {
+//     alert(i);
+// }
+
+// // Q4
+// let number;
+// while (true) {
+//     number = prompt("Please enter a number between 0 and 100:");
+
+//     if (number >= 0 && number <= 100) {
+//         break;
+//     } else {
+//         alert("input error. Please enter a number between 0 and 100.");
+//     }
+// }
+// alert( `Thank you! You entered a valid number: ${number}`);
+
+
+// // Q5
+// let sum = 0;
+// let number2 = prompt("Please enter an integer:");
+
+// for (let i = 0; i <= number2; i++) {
+//   sum += i;
+// }
+// alert(`The sum of integers from 0 to ${number2} is: ${sum}`);
+
+
 
 
 
