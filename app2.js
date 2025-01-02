@@ -4,10 +4,12 @@ const info = [];
 const items = [];
 
 let userName = prompt("Enter your Name please :");
+
+
 const parentElement = document.getElementById('parentDiv');
-const newParagraph = document.createElement('p');
-newParagraph.textContent = userName;
-parentElement.appendChild(newParagraph);
+const newP = document.createElement('p');
+newP.textContent = userName;
+parentElement.appendChild(newP);
 
 info.push(userName);
 let Gender;
@@ -53,14 +55,10 @@ for (let i = 0; i < info.length; i++) {
   console.log(info[i]);
 
 }
-
-
-
-
-
-
-
-
+const parent = document.getElementById('h3');
+let hero= document.createElement('h3');
+hero.textContent = "hello this is the hero";
+parent.prepend(hero);
 
 
 

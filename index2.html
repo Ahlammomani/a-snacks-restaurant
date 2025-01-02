@@ -9,12 +9,57 @@
 </head>
 
 <body>
-    <h1> Welcom to Snack restaurant</h1>
-    <div id="parentDiv">
-
-
-            </div>
+    <!-- <h1> Welcom to Snack restaurant</h1>
+    <div id="parentDiv"></div>
             <div id="list-container"></div>
+            <div id="h3"></div> -->
+
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Restaurant</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Snack Restaurant</h1>
+    </header> 
+    <div id="hero"></div>
+
+    <form id="orderForm">
+        <input type="text" placeholder="Name" id="Name">
+        <input type="text" placeholder="Gender" id="Gender">
+        <input type="text" placeholder="Age" id="Age">
+        <br><br>
+
+        <h3>Select your order:</h3>
+        <input id="shawarma" name="order" type="radio" value="Shawarma">
+        <label for="shawarma">Shawarma</label><br><br>
+
+        <input id="zinger" name="order" type="radio" value="Zinger">
+        <label for="zinger">Zinger</label><br><br>
+
+        <input id="burger" name="order" type="radio" value="Burger">
+        <label for="burger">Burger</label><br><br>
+
+        <h3>Select your order size:</h3>
+        <input id="sandwich" type="checkbox" value="Sandwich">
+        <label for="sandwich">Sandwich</label><br><br>
+
+        <input id="combo" type="checkbox" value="Combo">
+        <label for="combo">Combo</label><br><br>
+
+        <button id="click" type="button">Submit</button>
+        <p id="output"></p>
+    </form>
+
+    <script src="snacks-restaurant.js"></script>
+</body>
+</html>
+
+
     <script src="app2.js"></script>
 </body>
 
